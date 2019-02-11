@@ -1,0 +1,58 @@
+button {  /* Afecta todas las etiquetas HTML button */
+  background-color: seashell; /* Determina el color de fondo de nuestro botón */
+  border: none; /* Nos elimina el borde a nuestro botón */
+  border-radius: 12px; /* Hace los extremos de nuestro botón redondeados */
+  padding: 16px;  /* Crea un espacio entre el borde de nuestro botón y el centro del botón */
+  font-size: 20px; /* Determina el tamaño de letra dentro de nuestro bóton */
+  font-weight: bold; /* Hace que nuestro texto se vea en Negrita */
+  margin-right: 10px /* Crea un espacio entre el borde de nuestro botón y el exterior del mismo */
+}
+
+button:hover { /* Afecta todas las etiquetas HTML button en el momento que el cursor este sobre el */
+  background: salmon; /* Determina el color de fondo de nuestro botón */
+  border-style: solid; /* Nos crea un borde a nuestro botón de línea continuia */
+  border-color: pink; /* Nos da un color a el borde de nuestro botón */
+
+  cursor: pointer
+}
+
+label { /* Afecta todas las etiquetas HTML label */
+  white-space: nowrap; /* hace que nuestro texto no se quiebre, y se vea en una sola línea */
+}
+.childScreen { /* El . hace referencia a una clase, así que va a afectar todos los elementos HTML con esta clase */
+  width: 120px; /* Determina el ancho de la sección */
+}
+
+.fatherScreen { /* El . hace referencia a una clase, así que va a afectar todos los elementos HTML con esta clase */
+  height: 350px; /* Determina la altura de la sección */
+  display: grid;  /* Define el elemento como un contenedor de cuadrícula */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  background: #e9dbf1; /* Determina el color de fondo de la sección */
+  border-radius: 15px; /* Hace los extremos de nuestra sección redondeados */
+}
+
+.scoreScreen { /* El . hace referencia a una clase, así que va a afectar todos los elementos HTML con esta clase */
+  background: #e9dbf1;  /* Determina el color de fondo de la sección */
+  border-radius: 15px; /* Hace los extremos de la sección redondeados */
+  box-sizing: content-box; /* controla cómo se maneja el elemento al que se aplica.
+Los valores de ancho y alto se aplican al contenido, el relleno y el borde. */
+  padding: 20px; /* Crea un espacio entre el borde de la sección y el centro la sección */
+  margin-bottom: 8px; /* Crea un espacio entre el borde de la sección y el exterior de la misma */
+  font-weight: bold; /* Hace que nuestro texto se vea en Negrita */
+  font-size: 30px; /* Determina el tamaño de letra dentro de la sección */
+}
+
+.emoji { /* El . hace referencia a una clase, así que va a afectar todos los elementos HTML con esta clase */
+  font-size: 100px; /* Determina el tamaño de letra dentro de la sección */
+}
+
+.youWinText { /* El . hace referencia a una clase, así que va a afectar todos los elementos HTML con esta clase */
+    font-size: 60px; /* Determina el tamaño de letra dentro de la sección */
+    color: steelblue; /* Determina el color del texto en la sección */
+}
+
+img { /* Afecta todas las etiquetas HTML img */
+  width: 250px; /* Determina el ancho de nuestra imagen */
+  height: 250px; /* Determina la altura de nuestra imagen */
+}

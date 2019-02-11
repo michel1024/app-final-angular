@@ -1,0 +1,54 @@
+<div class="scoreScreen">
+  <label for="">
+    Score:
+  </label>
+
+  <label for="">
+    {{scoreGame || 0}}
+  </label>
+
+  <label for="">
+    / Timer:
+  </label>
+
+  <label for="">
+    {{0}}s
+  </label>
+</div>
+
+<div class="fatherScreen">
+  <div class="childScreen" *ngIf="showBtnStart">
+    <button (click)="startGame()">Iniciar juego</button>
+  </div>
+
+  <div class="childScreen" *ngIf='countDownEmoji > -1 && !showBtnStart'>
+    <label class='emoji'>
+      {{emojiArray[emojiIndex]}}
+    </label>
+    <br />
+    <label>
+      Tendrás {{countDownEmoji}}s para recordar este emoji
+    </label>
+  </div>
+
+  <div *ngIf='emojiAskIndex >= 0 && !youWin'>
+  <label class='emoji'>
+    {{emojiArray[emojiAskIndex]}}
+  </label>
+  <label>
+    ¿este es tu emoji?
+  </label>
+  <br />
+  <button class="childScreen" (click)="compareAnswer('YES')">Si</button>
+  <button class="childScreen" (click)="compareAnswer('NO')">No</button>
+</div>
+
+<div *ngIf='youWin'>
+    <label class='youWinText'>
+      ¡Lo lograste!
+    </label>
+    <br />
+    <img *ngIf='catURL' [src]="catURL" alt="Image Cat" />
+  </div>
+
+</div>
